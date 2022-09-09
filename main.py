@@ -118,6 +118,7 @@ class DrawInEasy:
         self.currentState = FIRST_POINT_STATE
         with mouse.Listener(on_click=self.on_click) as listener:
             listener.join()
+        time.sleep(2)
         print('-> Choose in workplan the second point to end drawing (bottom right corner of the picture)')
         self.currentState = SECOND_POINT_STATE
         with mouse.Listener(on_click=self.on_click) as listener:
@@ -141,7 +142,7 @@ class DrawInEasy:
             self.base_picture = self.base_picture.convert('RGBA')
         width = self.secondPicCoordinates[0] - self.firstPicCoordinates[0]
         height = self.secondPicCoordinates[1] - self.firstPicCoordinates[1]
-        self.base_picture.thumbnail((width, height), Image.ANTIALIAS)
+        self.base_picture.thumbnail((width, height), Image.Resampling.LANCZOS)
         self.width, self.height = self.base_picture.size
         for x in range(0, self.width):
             for y in range(0, self.height):

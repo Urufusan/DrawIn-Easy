@@ -1,27 +1,27 @@
-# DrawIn'Easy
+# DrawInKrita
 
-DrawIn'Easy is a bot dedicated to the games [Gartic Phone](https://garticphone.com/) and [Skribbl.io](https://skribbl.io/). 
-The bot will draw a picture fetched from an URL or the file system in the Gartic Phone or Skribbl.io interface.
+NO LONGER A BOT, NOW A PLUGIN FOR KRITA!
 
 # Installation
 
 - Install [Python 3](https://www.python.org/downloads/)
 - Run `pip install -r requirements.txt`
+- Run additional tweaking and setup idfk lol
 
 # How to use
 
-To run the bot, follow this steps:  
+To run the plguin, follow this steps:  
 - Be sure to have Python 3.x installed
 - Run `pip install -r requirements.txt`
 - Run `python main.py [-v | --verbose]`
-- When asking for a picture, simply paste an image url or an absolute file path
+- The next step is still buggy, just export the image and give it the location or paste a URL
 - When asking for the first point, just click on the drawing workplan. This point must be the top - left corner where the drawing should start.
 - When asking for the second point, click on the drawing workplan. This second point must be the bottom - right corner where the drawing should end.
-- Wait for some seconds (the larger and detailed the drawing area is, the longer the duration will be) and the bot will automatically choose the right colors to draw between the two points you gave.
+- Wait for some seconds (the larger and detailed the drawing area is, the longer the duration will be) and the plugin will automatically choose the right colors to draw between the two points you gave.
 
 # Bot support
 
-The bot have been tested under Windows 10, but it should also work on Linux.  
+The plugin have been tested under Linux, but it should also work on Windows 10.  
 Since the bot needs to be configured for each screen resolution in order to match the click on colors, the supported resolutions (in pixels) are:
 - 2560x1440
 - 1920x1080
